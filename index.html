@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI для продакта — ускоряем запуск продукта с ИИ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">AI Business</div>
+                <ul>
+                    <li><a href="#tools">Инструменты</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="#author">Об авторе</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>AI для продакта — ускоряем запуск продукта с ИИ</h1>
+                <p class="subtitle">Интерактивная страница митапа AI Business с кейсами, полезными ссылками.</p>
+
+                <div class="value-prop">
+                    <h2>Ценность:</h2>
+                    <ul>
+                        <li>Сократи рутину запуска продукта с дней до часов</li>
+                        <li>Быстрый анализ требований заказчика</li>
+                        <li>Ускоренное формирование технических заданий</li>
+                        <li>Понятные спецификации продукта для разработчиков</li>
+                        <li>Продуманный Roadmap и бэклог продукта</li>
+                    </ul>
+                </div>
+
+                <div class="hero-buttons">
+                    <a href="#tools" class="btn">Инструменты AI</a>
+                    <a href="#cases" class="btn btn-outline">Практические кейсы</a>
+                </div>
+
+                <div class="for-whom">
+                    <h2>Для кого:</h2>
+                    <div class="audience-grid">
+                        <div class="audience-card">
+                            <h3>Продакты и проджекты</h3>
+                            <p>Быстро работать с требованиями заказчика</p>
+                        </div>
+                        <div class="audience-card">
+                            <h3>Бизнес и системные аналитики</h3>
+                            <p>Готовить спецификации в разы быстрее</p>
+                        </div>
+                        <div class="audience-card">
+                            <h3>Предприниматели и руководители</h3>
+                            <p>Повысить эффективность сотрудников</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Tools -->
+        <section id="tools" class="tools">
+            <div class="container">
+                <h2>Инструменты</h2>
+                <div class="tools-grid">
+                    <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <div class="tool-logo">DeepSeek</div>
+                        <h3>DeepSeek</h3>
+                        <p>Мощная универсальная модель с большим контекстом, веб-поиском и размышлениями. Подходит для быстрого анализа требований, создания PRD и декомпозиции задач.</p>
+                    </a>
+                    <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <div class="tool-logo">NotebookLM</div>
+                        <h3>NotebookLM</h3>
+                        <p>Инструмент для общения с базой знаний (аудио, документы, презентации) и генерацией артефактов (подкасты, презентации, инфографика).</p>
+                    </a>
+                    <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer" class="tool-card tool-card-large">
+                        <div class="tool-logo">Claude</div>
+                        <h3>Claude</h3>
+                        <p>"Папа" всех AI-инструментов для глубокой проработки спецификаций продукта: технические задания, диаграммы, детальный backlog и roadmap.</p>
+                        <span class="sub-link" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://mermaid.ai/live/', '_blank', 'noopener,noreferrer')">Вспомогательный сайт для отрисовки mermaid диаграмм: mermaid.ai</span>
+                    </a>
+                    <a href="https://manus.im/app" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <div class="tool-logo">Manus</div>
+                        <h3>Manus</h3>
+                        <p>Создание красивых презентаций для демо ваших идей и продуктов.</p>
+                    </a>
+                    <a href="https://www.kimi.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
+                        <div class="tool-logo">Kimi</div>
+                        <h3>Kimi</h3>
+                        <p>Швейцарский нож для задач аналитики, исследования и визуализации данных.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Practical Cases -->
+        <section id="cases" class="cases">
+            <div class="container">
+                <h2>Практические кейсы</h2>
+                <div class="cases-grid">
+                    <!-- Case 1 -->
+                    <div class="case-card">
+                        <div class="case-tag">NotebookLM</div>
+                        <h3>Быстрое погружение в требования</h3>
+                        <p>Погрузиться в требования заказчика, расшифровать и пообщаться с записями встреч, составить саммари и ключевые поинты.</p>
+                        <div class="effect">Эффект: ускорение погружения с дней до часов</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпт</button>
+                            <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <code>Проанализируй записи встреч и выдели ключевые требования заказчика. Составь краткое саммари и список открытых вопросов.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 2 -->
+                    <div class="case-card">
+                        <div class="case-tag">DeepSeek</div>
+                        <h3>Создание PRD документа</h3>
+                        <p>Проанализировать требования заказчика и составить на их основе PRD документ для всех участников команды.</p>
+                        <div class="effect">Эффект: создание PRD за 15 минут</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпт</button>
+                            <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <code>На основе следующих требований [вставить текст] составь подробный PRD (Product Requirements Document), включающий цели, целевую аудиторию, функциональные требования и критерии успеха.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 3: Large card -->
+                    <div class="case-card case-card-large">
+                        <div class="case-tag">Claude</div>
+                        <h3>Техническое проектирование и Backlog</h3>
+                        <p>На основе собранных требований разработать техническое задание на разработку продукта, декомпозировать User Story и технические задачи в Baсklog, распланировать Roadmap и первые спринты.</p>
+                        <div class="effect">Эффект: Полный бэклог и роадмап за час</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпты</button>
+                            <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <p><strong>Промпт 1: ТЗ</strong></p>
+                                <code>Разработай детальное техническое задание для разработчиков на основе PRD. Опиши архитектуру данных и API эндпоинты.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                            <div class="prompt-box">
+                                <p><strong>Промпт 2: User Stories</strong></p>
+                                <code>Декомпозируй требования на User Stories в формате: Как [роль], я хочу [действие], чтобы [ценность].</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 4 -->
+                    <div class="case-card">
+                        <div class="case-tag">Claude + Mermaid</div>
+                        <h3>Визуализация логики</h3>
+                        <p>Специфицировать ключевую логику продукта в понятные диаграммы.</p>
+                        <div class="effect">Эффект: Понятная архитектура без часов рисования</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпт</button>
+                            <a href="https://mermaid.ai/live/" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <code>Создай код Mermaid для диаграммы последовательности (sequence diagram), описывающей процесс авторизации и оплаты заказа.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 5 -->
+                    <div class="case-card">
+                        <div class="case-tag">Manus</div>
+                        <h3>Презентация проекта</h3>
+                        <p>Собрать презентацию проекта на основе данных о продукте.</p>
+                        <div class="effect">Эффект: Готовая презентация за 10 минут</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпт</button>
+                            <a href="https://manus.im/app" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <code>Сгенерируй структуру и контент для 10 слайдов презентации инвесторского питча нашего продукта.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case 6 -->
+                    <div class="case-card">
+                        <div class="case-tag">Kimi</div>
+                        <h3>Аналитика и инсайты</h3>
+                        <p>Проанализировать табличные данные, визуализировать инсайты и сделать выводы.</p>
+                        <div class="effect">Эффект: Автоматический поиск аномалий и трендов</div>
+                        <div class="case-actions">
+                            <button class="btn-expand" onclick="togglePrompt(this)">Раскрыть промпт</button>
+                            <a href="https://www.kimi.com/" target="_blank" rel="noopener noreferrer" class="btn-tool">В инструмент</a>
+                        </div>
+                        <div class="prompt-content" style="display: none;">
+                            <div class="prompt-box">
+                                <code>Проанализируй прикрепленный CSV файл с данными о продажах и выдели 3 ключевых инсайта для роста выручки.</code>
+                                <button class="btn-copy" onclick="copyPrompt(this)">Копировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Author and Gallery -->
+        <section id="author" class="author">
+            <div class="container">
+                <div class="author-info">
+                    <div class="author-photo">
+                        <img src="assets/egor.jpg" alt="Егор Красильников">
+                    </div>
+                    <div class="author-details">
+                        <h2>Егор Красильников</h2>
+                        <p class="author-title">CEO AllSee.team, координатор сообщества и хакатонов AI Business SPb</p>
+                        <ul class="author-achievements">
+                            <li>🟡 AI Product Manager и ex-продуктовый аналитик Газпромнефть;</li>
+                            <li>🟡 Выпускник СПбГУ ПМ-ПУ, в продуктовой разработке с 2018 года;</li>
+                            <li>🟡 Спикер ML2Business, ИТ-диалог, AI Pulse и корпоративных митапов Газпромнефть.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="portfolio">
+                    <h3>Портфолио мероприятий</h3>
+                    <div class="portfolio-grid">
+                        <a href="https://www.youtube.com/live/zMEHKw21MDU?si=3nbOI5IDbey5r8zt&t=2659" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                            <h4>ML2Business</h4>
+                            <p>Запуск AI-продукта, фишки и грабли</p>
+                        </a>
+                        <a href="https://vk.com/video-230108642_456239020" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                            <h4>Митапы Газпромнефть</h4>
+                            <p>Ускорение проектных задач</p>
+                        </a>
+                        <a href="https://t.me/pruduct_24/1013" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                            <h4>Кейс-чемпионат Газпромнефть</h4>
+                            <p>За 1 день научить сотрудников применять ИИ</p>
+                        </a>
+                        <a href="https://ai-business-spb.ru/" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                            <h4>Хакатон AI-Business</h4>
+                            <p>За 2 дня создать прототипы AI-продуктов</p>
+                        </a>
+                        <a href="https://vk.com/video-230108642_456239020" target="_blank" rel="noopener noreferrer" class="portfolio-card">
+                            <h4>Митап в Газпромнефти</h4>
+                            <p>Продуктовый подход для разработки AI-продуктов</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="gallery">
+                    <h3>Как это было</h3>
+                    <div class="gallery-grid">
+                        <img src="assets/image_1.png.webp" alt="Мероприятие 1">
+                        <img src="assets/IMG_8184.jpeg" alt="Мероприятие 2">
+                        <img src="assets/0347.jpg" alt="Мероприятие 3">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Lead Capture -->
+        <section id="leads" class="leads">
+            <div class="container">
+                <div class="leads-grid">
+                    <div class="lead-card">
+                        <h3>Получить авторский шаблон ТЗ</h3>
+                        <p>Для продуктовых команд и корпоративных центров AI-экспертизы, чтобы точнее ставить задачи.</p>
+                        <a href="https://t.me/m/mMYnzN3jNWMy" target="_blank" rel="noopener noreferrer" class="btn">Получить шаблон</a>
+                    </div>
+                    <div class="lead-card">
+                        <h3>Пригласить выступить</h3>
+                        <p>Для компаний, кто хочет ускорить процессы c AI и снять барьеры в применении технологий.</p>
+                        <a href="https://t.me/m/prcCUTgcMDUy" target="_blank" rel="noopener noreferrer" class="btn">Запросить портфолио</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://t.me/kras_ai_pm" target="_blank" rel="noopener noreferrer">Канал Егора</a>
+                <a href="https://allsee.team" target="_blank" rel="noopener noreferrer">Студия AllSee</a>
+                <a href="https://ai-business-spb.ru" target="_blank" rel="noopener noreferrer">AI Business SPb</a>
+            </div>
+            <p class="copyright">&copy; 2024 AI Business. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
