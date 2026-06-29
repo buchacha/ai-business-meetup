@@ -1,9 +1,47 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('.main-header');
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navLinks = document.querySelector('.nav-links');
+    const backdrop = document.querySelector('.menu-backdrop');
+    const navItems = document.querySelectorAll('.nav-links a');
+
+    // 1. Header scroll logic
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            header.classList.add('header-visible');
+        } else {
+            // Only hide if menu is not open on mobile
+            if (!burgerMenu.classList.contains('open')) {
+                header.classList.remove('header-visible');
+            }
+        }
+    });
+
+    // 2. Burger menu logic
+    function toggleMenu() {
+        burgerMenu.classList.toggle('open');
+        navLinks.classList.toggle('active');
+        backdrop.classList.toggle('active');
+        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+    }
+
+    burgerMenu.addEventListener('click', toggleMenu);
+    backdrop.addEventListener('click', toggleMenu);
+
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                toggleMenu();
+            }
+        });
+    });
+});
+
 function togglePrompt(button) {
-    // Corrected to handle the new structure where .prompt-content is a sibling of .case-actions
     const actions = button.closest('.case-actions');
     const content = actions.nextElementSibling;
 
-    if (content.style.display === "none") {
+    if (content.style.display === "none" || content.style.display === "") {
         content.style.display = "block";
         button.textContent = "Скрыть промпт";
     } else {

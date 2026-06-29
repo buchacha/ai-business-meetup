@@ -10,11 +10,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <nav>
-            <div class="container">
+            <div class="container header-container">
                 <div class="logo">AI Business</div>
-                <ul>
+                <button class="burger-menu" aria-label="Меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
                     <li><a href="#tools">Инструменты</a></li>
                     <li><a href="#cases">Кейсы</a></li>
                     <li><a href="#author">Об авторе</a></li>
@@ -22,6 +27,7 @@
             </div>
         </nav>
     </header>
+    <div class="menu-backdrop"></div>
 
     <main>
         <!-- Section 1: Hero -->
@@ -72,28 +78,28 @@
                 <h2>Инструменты</h2>
                 <div class="tools-grid">
                     <a href="https://chat.deepseek.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
-                        <div class="tool-logo">DeepSeek</div>
+                        <div class="tool-logo-img"><img src="assets/deepseek.png" alt="DeepSeek"></div>
                         <h3>DeepSeek</h3>
                         <p>Мощная универсальная модель с большим контекстом, веб-поиском и размышлениями. Подходит для быстрого анализа требований, создания PRD и декомпозиции задач.</p>
                     </a>
                     <a href="https://notebooklm.google.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
-                        <div class="tool-logo">NotebookLM</div>
+                        <div class="tool-logo-img"><img src="assets/notebooklm.png" alt="NotebookLM"></div>
                         <h3>NotebookLM</h3>
                         <p>Инструмент для общения с базой знаний (аудио, документы, презентации) и генерацией артефактов (подкасты, презентации, инфографика).</p>
                     </a>
                     <a href="https://claude.ai/new" target="_blank" rel="noopener noreferrer" class="tool-card tool-card-large">
-                        <div class="tool-logo">Claude</div>
+                        <div class="tool-logo-img"><img src="assets/claude.png" alt="Claude"></div>
                         <h3>Claude</h3>
                         <p>"Папа" всех AI-инструментов для глубокой проработки спецификаций продукта: технические задания, диаграммы, детальный backlog и roadmap.</p>
                         <span class="sub-link" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://mermaid.ai/live/', '_blank', 'noopener,noreferrer')">Вспомогательный сайт для отрисовки mermaid диаграмм: mermaid.ai</span>
                     </a>
                     <a href="https://manus.im/app" target="_blank" rel="noopener noreferrer" class="tool-card">
-                        <div class="tool-logo">Manus</div>
+                        <div class="tool-logo-img"><img src="assets/manus.png" alt="Manus"></div>
                         <h3>Manus</h3>
                         <p>Создание красивых презентаций для демо ваших идей и продуктов.</p>
                     </a>
                     <a href="https://www.kimi.com/" target="_blank" rel="noopener noreferrer" class="tool-card">
-                        <div class="tool-logo">Kimi</div>
+                        <div class="tool-logo-img"><img src="assets/Kimi-logo-2025.png" alt="Kimi"></div>
                         <h3>Kimi</h3>
                         <p>Швейцарский нож для задач аналитики, исследования и визуализации данных.</p>
                     </a>
@@ -234,9 +240,9 @@
                         <h2>Егор Красильников</h2>
                         <p class="author-title">CEO AllSee.team, координатор сообщества и хакатонов AI Business SPb</p>
                         <ul class="author-achievements">
-                            <li>🟡 AI Product Manager и ex-продуктовый аналитик Газпромнефть;</li>
-                            <li>🟡 Выпускник СПбГУ ПМ-ПУ, в продуктовой разработке с 2018 года;</li>
-                            <li>🟡 Спикер ML2Business, ИТ-диалог, AI Pulse и корпоративных митапов Газпромнефть.</li>
+                            <li>AI Product Manager и ex-продуктовый аналитик Газпромнефть;</li>
+                            <li>Выпускник СПбГУ ПМ-ПУ, в продуктовой разработке с 2018 года;</li>
+                            <li>Спикер ML2Business, ИТ-диалог, AI Pulse и корпоративных митапов Газпромнефть.</li>
                         </ul>
                     </div>
                 </div>
@@ -281,6 +287,10 @@
         <!-- Section 5: Lead Capture -->
         <section id="leads" class="leads">
             <div class="container">
+                <div class="leads-header">
+                    <h2>Остались вопросы или готовы к сотрудничеству?</h2>
+                    <p>Отвечаю в течение 15 минут</p>
+                </div>
                 <div class="leads-grid">
                     <div class="lead-card">
                         <h3>Получить авторский шаблон ТЗ</h3>
@@ -304,7 +314,7 @@
                 <a href="https://allsee.team" target="_blank" rel="noopener noreferrer">Студия AllSee</a>
                 <a href="https://ai-business-spb.ru" target="_blank" rel="noopener noreferrer">AI Business SPb</a>
             </div>
-            <p class="copyright">&copy; 2024 AI Business. Все права защищены.</p>
+            <p class="copyright">&copy; 2026 AI Business. Все права защищены.</p>
         </div>
     </footer>
 
